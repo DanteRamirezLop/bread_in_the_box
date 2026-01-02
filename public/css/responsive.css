@@ -1,0 +1,58 @@
+/* Extra Extra large devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+     .single_hero_slider.banner-home{
+        height: 850px;
+    }
+}
+
+/* Extra large devices (large desktops, 1300px and up) */
+@media (min-width: 1300px) and (max-width: 1599.98px) {
+    .single_hero_slider.banner-home{
+        height: 570px;
+     }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1299.98px) {
+    .single_hero_slider.banner-home{
+        height: 520px;
+     }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 995px) and (max-width: 1199.98px) {
+      .single_hero_slider.banner-home{
+        height: 485px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 994.98px) {
+    .single_hero_slider.banner-home{
+        height: 420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 799.98px) {
+    .single_hero_slider.banner-home{
+        height: 400px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .single_hero_slider.banner-home{
+        height: 360px;
+    }
+    .bg-home{
+        background-image: url('/images/home/banner-home-mobile.webp');
+    }
+     .bg-1{
+        background-image: url('/images/home/banner-1-mobile.webp');
+    }
+     .bg-2{
+        background-image: url('/images/home/banner-2-mobile.webp');
+    }
+    .bg-3{
+        background-image: url('/images/home/banner-3-mobile.webp');
+    }
+}
