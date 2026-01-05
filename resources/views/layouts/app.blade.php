@@ -34,7 +34,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @stack('style')
         <link rel="stylesheet" href="{{asset('css/line-awesome.css')}}?v=1993.4.1">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}?v=1993.4.18">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}?v=1993.4.19">
         <link rel="stylesheet" href="{{asset('css/responsive.css')}}?v=1993.4.17">
         <!-- Styles -->
         @livewireStyles

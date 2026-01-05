@@ -40,6 +40,10 @@ strong {
   font-weight: bolder;
 }
 
+.bg-black\/50 {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
 .top-3 {
     top: 0.75rem;
 }
