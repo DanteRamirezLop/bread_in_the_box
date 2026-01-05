@@ -78,6 +78,5 @@
         </script>
         <!-- activa el footer version movile -->
         <script src="{{asset('js/animate.js')}}"></script>
-
     </body>
 </html>

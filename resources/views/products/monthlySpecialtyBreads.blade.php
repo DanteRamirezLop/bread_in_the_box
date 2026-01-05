@@ -22,9 +22,9 @@
                         <p class="mb-5 font-normal text-gray-700 text-2xl"> {!! $breadTheMonth->product_description !!}</p>
                             <div class="mb-4 mt-5 text-center">
                                 <div class="text-brown text-xl mb-3">Do you want to become a distributor? </div>
-                                <a href="{{route('contact')}}" aria-label="Contact us here" class="btn btn-brown-line mx-auto">
-                                   Contact us here <i class="las la-mail-bulk text-xl ml-1"></i>
-                                </a>
+                                <button id="openModal" class="btn btn-brown-line mx-auto">
+                                    Contact us here <i class="las la-mail-bulk text-xl ml-1"></i>
+                                </button>
                             </div>
                     </div>
                 </div>
@@ -43,9 +43,6 @@
                         <div class="product-card__header">
                             <a href="{{route('products.show',$product)}}" class="image-produc">
                                 <img  class="w-full rounded-md transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square" src="{{config('services.trading.url')}}/uploads/img/{{$product->image}}" alt="{{$product->name}}" width="250" height="250" />
-
-                                <!-- <img src="{{config('services.trading.url')}}/uploads/img/{{$product->image}}" alt="" class="product-card__img">
-                             -->
                             </a>
                         </div>
                         <div class="product-card__body">
@@ -57,6 +54,16 @@
             @endforeach
         </div>
     </section>
+
+    @include('modal-messages')
+
+    @push('css')
+       <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    @endpush
+
+    @push('script')
+        <script src="{{asset('js/messages.js')}}?v=1993.1.1"></script>
+    @endpush
 
     @push('seo')
 		<title>{{$seo['title']}}</title>
