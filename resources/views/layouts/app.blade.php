@@ -40,7 +40,7 @@
         @livewireStyles
         @stack('css')
     </head>
-    <body>
+    <body >
         <div id='main_v'>
             <div>
                 <div class="overlay"></div>
@@ -78,5 +78,6 @@
         </script>
         <!-- activa el footer version movile -->
         <script src="{{asset('js/animate.js')}}"></script>
+
     </body>
 </html>
