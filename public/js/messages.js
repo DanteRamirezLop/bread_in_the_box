@@ -92,7 +92,9 @@
                                     Swal.fire({
                                     icon: 'success',
                                     title: response.msg
-                                    })
+                                    }).then((result) => {
+                                        location.reload();
+                                    });
                                 } else {
                                     Swal.fire({
                                     icon: 'warning',
