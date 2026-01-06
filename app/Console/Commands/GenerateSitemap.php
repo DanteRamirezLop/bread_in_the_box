@@ -77,7 +77,7 @@ class GenerateSitemap extends Command
         //Rutas de productos
         Product::get()->each(function (Product $post) use ($postsitmap) {
             $postsitmap->add(
-                Url::create("/product/{$post->slug}")
+                Url::create("/product/{$post->product_custom_field10}")
                     ->setLastModificationDate(Carbon::create($post->created_at))
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
             );
